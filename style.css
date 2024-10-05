@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: inherit; */
+}
+
+html {
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    height: 100vh;
+    background: linear-gradient(to left top, #4b6cb7 0%, #182848 100%);
+}
+
+.main-div {
+    position: relative;
+    height: 40rem;
+    width: 65rem;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    height: 45rem;
+    width: 65rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 0.7rem;
+    overflow: hidden;
+
+}
+
+.player {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    /* backdrop-filter: blur(200px);
+    filter: blur(); */
+    /* border: 0.1px solid black; */
+}
+
+.active-player {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.current {
+    color: #bdd8ff;
+    background: linear-gradient(to left top, #4b6cb7 0%, #182848 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+    border-radius: 0.6rem;
+}
+
+.name {
+    font-size: 2.5rem;
+    /* background-color: green; */
+    color: #221f1f;
+    /* flex: 1; */
+}
+
+.score {
+    font-size: 5rem;
+    color: #182848;
+    margin-bottom: 3rem;
+    /* background-color: green; */
+    /* flex: 1; */
+}
+
+.current-label {
+    font-size: 1.2rem;
+}
+
+.current-score {
+    margin-top: 0.8rem;
+    font-size: 2.5rem;
+}
+
+.btn {
+    font-family: sans-serif;
+    padding: 0.3rem 1rem;
+    font-size: 1.6rem;
+    border-radius: 3rem;
+    border: none;
+    background-color: #ffffff;
+    color: #292525;
+}
+
+.btn:active {
+    transform: translate(0, 0.15rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  }
+
+.new-game-btn {
+    position: absolute;
+    left: 42%;
+    top: 7%;
+}
+
+.dice-img {
+    width: 12%;
+    position: absolute;
+    top: 40%;
+    left: 44%;
+}
+
+.roll-dice-btn {
+    position: absolute;
+    top: 80%;
+    left: 43%;
+}
+
+.hold-btn {
+    position: absolute;
+    top: 93%;
+    left: 46%;
+}
+
+.winner-modal {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    width: 25rem;
+    height: 15rem;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.5rem;
+    z-index: 10;
+}
+
+.close-btn {
+    margin-left: auto;
+    margin-right: 1.3rem;
+    margin-top: 0.8rem;
+    font-size: 2rem;
+    border: none;
+    flex: 1;
+}
+
+.emoji {
+    flex: 1;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.winner-msg {
+    flex: 2;
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
+
+.hidden {
+    display: none;
+}
